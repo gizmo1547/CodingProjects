@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Projects Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#projects" id="projectsMenu">Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="#" onclick="showProjects('cpp')">C++</a></li>
+                            <!-- Add more languages as needed -->
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div id="cppProjects" class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1.</p>
+                    <button onclick="buyProject('Project 1')">Buy Now</button>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2.</p>
+                    <button onclick="buyProject('Project 2')">Buy Now</button>
+                </div>
+                <!-- Add more C++ projects as needed -->
+            </div>
+            <!-- Add more project categories as needed -->
+        </section>
+        <section id="about" class="container">
+            <h2>About</h2>
+            <p>This is a store where you can purchase my projects. Each project is thoroughly tested and documented.</p>
+        </section>
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>If you have any questions, feel free to <a href="mailto:youremail@example.com">contact me</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Projects Store. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
